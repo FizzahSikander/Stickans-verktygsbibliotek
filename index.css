@@ -43,7 +43,7 @@ body {
     line-height: 22px;
     letter-spacing: -0.02em;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .signUppara {
@@ -53,7 +53,7 @@ body {
     line-height: 18px;
     letter-spacing: -0.02em;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 26px;
     color: #858585;
 }
@@ -71,7 +71,7 @@ main {
     text-align: center;
     color: black;
     margin-top: 45px;
-    margin-left: 50px;
+    margin-left: 15px;
 }
 
 .email-para {
@@ -82,11 +82,10 @@ main {
     letter-spacing: -0.02em;
     text-align: center;
     margin-top: 20px;
-    width: 250px;
-    height: 50px;
-    margin-left: 50px;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
     margin-bottom: 10px;
-    align-self: center;
 }
 
 .email-form {
@@ -129,7 +128,6 @@ main {
 button {
     background-color: #F6D441;
     color: black;
-    width: 378px;
     height: 60px;
     border-radius: 10px;
     font-family: Open Sans;
@@ -139,7 +137,7 @@ button {
     letter-spacing: -0.02em;
     text-align: center;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 button:hover {
@@ -182,7 +180,9 @@ button:hover {
     justify-content: space-between;
     align-items: center;
 }
-
+main{
+    padding-left: 40px;
+}
 .images-container {
     display: flex;
     justify-content: space-around;
