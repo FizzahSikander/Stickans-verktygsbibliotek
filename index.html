@@ -7,6 +7,14 @@
     <title>Stickans verktygsbibliotek</title>
     <link rel="stylesheet" href="../components/components.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/20b631fd69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
     <header class="header">
         <aside class="navigation">
@@ -14,24 +22,28 @@
         </aside>
     </header>
     <main>
-        <h1>Sign Up!</h1>
-        <p>Sign Up or join as guest to continue</p>
-        <form action="#" method="POST">
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+        <h1 class="signUp">Sign Up!</h1>
+        <p class="signUppara">Sign Up or join as guest to continue</p>
+        <form class="form" action="#" method="POST">
+            <div class="email-form">
+                <label for="email" class="email-header">Email</label>
+                <input type="email" class="email-para" id="email" name="email" required>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+            <div class="email-form">
+                <label for="password" class="email-header">Password</label>
+                <input type="password" class="email-para" id="password" name="password" required>
             </div>
-            <a href="#">Forget password?</a>
-            <button type="submit">Sign In</button>
+            <div class="forget">
+                <a class="forgetPassword" href="#">Forget password?</a>
+                <button type="submit">Sign In</button>
+            </div>
         </form>
-        <p>Don't have an account? <a href="#">Guest Login</a></p>
+        <p class="signUppara">Don't have an account? <a class="guest-ref" href="#">Guest Login</a></p>
         <p>OR</p>
-        <a href="#">Sign up with Google</a>
-        <a href="#">Sign up with Facebook</a>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </div>
     </main>
 </body>
 

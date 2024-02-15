@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mobile Webpage Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header .bell-icon,
+        header .back-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #fff;
+            padding: 0 10px;
+        }
+
+        .container {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer .cart-icon {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="back-icon">&#8592;</span>
+        <h1>Products</h1>
+        <span class="bell-icon">🔔</span>
+    </header>
+
+    <div class="container">
+        <img src="hammer_image.jpg" alt="Hammer Image">
+        <h2>Hammer</h2>
+        <p>Set of tools to put up shelf</p>
+        <span class="cart-icon">🛒</span>
+    </div>
+
+    <div class="container">
+        <img src="another_tool_image.jpg" alt="Tool Image">
+        <h2>Another Tool</h2>
+        <p>Description of another tool</p>
+        <span class="cart-icon">🛒</span>
+    </div>
+
+    <!-- Add more containers as needed -->
+
+    <footer>
+        <span class="home-icon">🏠</span>
+        <span class="sign-in-icon">👤</span>
+        <span class="cart-icon">🛒</span>
+        <span class="settings-icon">⚙️</span>
+    </footer>
+</body>
+</html>
