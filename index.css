@@ -85,6 +85,7 @@ main {
     width: 350px;
     height: 50px;
     margin-left: 15px;
+    border-color: #f6d441;
 }
 
 .email-form {
@@ -142,6 +143,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -154,7 +156,56 @@ main {
 }
 
 /* Page one*/
+.image-heading {
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
 
+.image-description {
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.image-dollars {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #858585;
+    margin-top: -30px;
+}
+
+.welcome {
+    font-family: "OpenSans";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    align-self: start;
+    margin-left: 20px;
+}
+
+.tools.image {
+    width: 100%;
+    max-width: 378px;
+}
+
+.search-bar-text {
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+}
 
 .search-bar {
     display: flex;
@@ -178,7 +229,41 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: "OpenSans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
 }
+
+.category-heading {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.categories-para {
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.seeAll {
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #858585;
+}
+
 
 .images-container {
     display: flex;
@@ -199,14 +284,15 @@ main {
     width: 377px;
     align-items: center;
     margin-left: 26px;
+    background: #FBE9A0;
 }
 
 header {
     width: 403px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .category-section {
@@ -224,23 +310,24 @@ header {
     text-align: center;
 }
 
+.category-section--item-ellipsis {
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .category-item {
     width: 72px;
-    /* Set a fixed width */
     height: 72px;
-    /* Set a fixed height to make it a circle */
     display: flex;
     justify-content: center;
-    /* Center the content horizontally */
     align-items: center;
-    /* Center the content vertically */
     border-radius: 50%;
-    /* Make it a circle */
-    padding: 8px;
+    padding: 3px;
     box-shadow: 0 2px 5px #f6d441;
     background-color: #F6D441;
     overflow: hidden;
-    /* Ensure nothing spills outside the circle */
 }
 
 .category-image {
@@ -261,6 +348,9 @@ header {
 }
 
 /* page-two */
+.up{
+    justify-content: space-between;
+}
 .container {
     display: flex;
     align-items: center;
@@ -285,6 +375,7 @@ footer {
     color: black;
     width: 371px;
     height: 65px;
+    margin-left: -20px;
 }
 
 .footer span {

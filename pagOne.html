@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile App Layout</title>
+    <title>Main Page</title>
     <script src="https://kit.fontawesome.com/20b631fd69.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,52 +15,55 @@
 
 <body>
     <header>
-        <h1>Welcome</h1>
+        <h1 class="welcome">Welcome</h1>
         <a><i class="fa-regular fa-bell"></i></a>
     </header>
     <div class="search-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search... "><i class="fa-solid fa-microphone"></i>
+        <input type="text" class="search-bar-text" placeholder="Search tool by keyword "><i
+            class="fa-solid fa-microphone"></i>
     </div>
 
     <div>
-        <img src="images/tools image.png" alt="tools-image" style="width: 100%; max-width: 300px; border-radius: 10px;">
+        <img src="images/tools image.png" alt="tools-image" class="tools-image">
     </div>
 
     <div class="category-header">
-        <h2>Categories</h2>
-        <a href="#">See All</a>
+        <h2 class="category-heading">Categories</h2>
+        <a class="seeAll" href="#">See All</a>
     </div>
     <div class="category-section">
         <div class="category-section--item">
-            <div class="category-item">
-                <img src="images/tool-box.png" alt="Category 1" class="category-image">
+            <div class="category-item"><a href="./pageTwo.html">
+                    <img src="images/tool-box.png" alt="Category 1" class="category-image"></a>
             </div>
-            <p>Construction</p>
+            <p class="categories-para">Construction</p>
         </div>
         <div class="category-section--item">
-            <div class="category-item">
-                <img src="images/excavator.png" alt="Category 2" class="category-image">
+            <div class="category-item"><a href="./pageTwo.html">
+                    <img src="images/excavator.png" alt="Category 2" class="category-image"></a>
             </div>
             <p>Tools</p>
         </div>
-        <div class="category-section--item">
-            <i class="fa-solid fa-ellipsis"></i>
+        <div class="category-section--item-ellipsis">
+            <div class="category-item">
+                <a href="./pageTwo.html"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
             <p>Others</p>
         </div>
     </div>
-    <h2>Popular</h2>
+    <h2 class="welcome">Popular</h2>
     <div class="images-container">
         <div class="hammer-container">
             <div class="hammer-container-images">
                 <img src="images/page1hammer.png" alt="Second Item">
             </div>
             <div>
-                <h2>Hammer</h2>
+                <h2 class="image-heading">Hammer</h2>
                 <p class="image-description">Set of tools to put up shelf</p>
             </div>
             <div>
-                <p>$4/per day</p>
+                <p class="image-dollars">$4/per day</p>
             </div>
         </div>
         <div class="hammer-container">
@@ -68,17 +71,17 @@
                 <img src="images/page2-screwDrive.png" alt="Second Item">
             </div>
             <div>
-                <h2>Screw Driver</h2>
+                <h2 class="image-heading">Screw Driver</h2>
                 <p class="image-description">Set of tools to put up shelf</p>
             </div>
             <div>
-                <p>$4/per day</p>
+                <p class="image-dollars">$4/per day</p>
             </div>
         </div>
     </div>
     <footer>
         <div class="house">
-            <span class="home-icon"><i class="fa-solid fa-house"></i></span>
+            <a href="./index.html"><span class="home-icon"><i class="fa-solid fa-house"></i></span></a>
         </div>
         <span class="sign-in-icon"><i class="fa-regular fa-user"></i></span>
         <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
