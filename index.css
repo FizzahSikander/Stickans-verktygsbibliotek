@@ -124,7 +124,7 @@ main {
     font-size: 40px;
 }
 
-button {
+.button {
     background-color: #F6D441;
     color: black;
     width: 378px;
@@ -138,9 +138,13 @@ button {
     text-align: center;
     margin-top: 30px;
     margin-left: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover {
+.button:hover {
     background-color: #0056b3;
 }
 
@@ -197,31 +201,49 @@ button:hover {
     margin-left: 26px;
 }
 
-.category-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.category-item {
-    width: 30%;
-    text-align: center;
-    border: 2px solid #ddd;
-    border-radius: 100%;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.category-image {
-    width:42px;
-    border-radius: 100%;
-    background-color: #F6D441;
-}
-
 header {
     width: 403px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.category-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.category-section--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content (image and text) vertically */
+    text-align: center;
+}
+
+.category-item {
+    width: 72px; /* Set a fixed width */
+    height: 72px; /* Set a fixed height to make it a circle */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    border-radius: 50%; /* Make it a circle */
+    padding: 8px;
+    box-shadow: 0 2px 5px #f6d441;
+    background-color: #F6D441;
+    overflow: hidden; /* Ensure nothing spills outside the circle */
+}
+
+.category-image {
+    width: 60px; /* Adjust based on desired size, ensuring it's smaller than the container */
+    height: 60px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional, if you want the images themselves to also be circles */
+}
+
+/* If you're using FontAwesome icons inside a category item and want them to match the size */
+.fa-ellipsis {
+    font-size: 2rem; /* Adjust the size of the icon */
+    color: #333; /* Or any color */
 }
