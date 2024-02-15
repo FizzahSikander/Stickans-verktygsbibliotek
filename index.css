@@ -208,10 +208,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .category-section {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
     align-items: center;
     width: 100%;
 }
@@ -219,31 +219,124 @@ header {
 .category-section--item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content (image and text) vertically */
+    align-items: center;
+    /* Center the content (image and text) vertically */
     text-align: center;
 }
 
 .category-item {
-    width: 72px; /* Set a fixed width */
-    height: 72px; /* Set a fixed height to make it a circle */
+    width: 72px;
+    /* Set a fixed width */
+    height: 72px;
+    /* Set a fixed height to make it a circle */
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    border-radius: 50%; /* Make it a circle */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    border-radius: 50%;
+    /* Make it a circle */
     padding: 8px;
     box-shadow: 0 2px 5px #f6d441;
     background-color: #F6D441;
-    overflow: hidden; /* Ensure nothing spills outside the circle */
+    overflow: hidden;
+    /* Ensure nothing spills outside the circle */
 }
 
 .category-image {
-    width: 60px; /* Adjust based on desired size, ensuring it's smaller than the container */
-    height: 60px; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional, if you want the images themselves to also be circles */
+    width: 60px;
+    /* Adjust based on desired size, ensuring it's smaller than the container */
+    height: 60px;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Optional, if you want the images themselves to also be circles */
 }
 
 /* If you're using FontAwesome icons inside a category item and want them to match the size */
 .fa-ellipsis {
-    font-size: 2rem; /* Adjust the size of the icon */
-    color: #333; /* Or any color */
+    font-size: 2rem;
+    /* Adjust the size of the icon */
+    color: #333;
+    /* Or any color */
+}
+
+/* page-two */
+.container {
+    display: flex;
+    align-items: center;
+    width: 381px;
+    height: 66px;
+    justify-content: space-around;
+    background-color: #F6D441;
+    margin-top: 20px;
+}
+
+.container img {
+    margin-left: 20px;
+    width: 53px;
+    height: 53px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 371px;
+    height: 65px;
+}
+
+.footer span {
+    cursor: pointer;
+}
+
+.fa-house,
+.fa-user,
+.fa-cart-shopping,
+.fa-gear {
+    font-size: 26px;
+}
+
+.house {
+    width: 66px;
+    height: 66px;
+    background-color: #F6D441;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.arrow-button {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.fa-bell {
+    font-size: 32px;
+}
+
+.categories {
+    font-family: "OpenSans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.container-further {
+    font-family: "OpenSans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }

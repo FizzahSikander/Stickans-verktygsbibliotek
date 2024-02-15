@@ -1,113 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Webpage Title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        header .notification-icon {
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-        }
-
-        header .arrow-button {
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .container img {
-            max-width: 100%;
-            height: auto;
-            margin-left: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        footer .home-icon,
-        footer .sign-in-icon,
-        footer .cart-icon,
-        footer .settings-icon {
-            font-size: 20px;
-            margin: 0 10px;
-        }
-    </style>
+    <title>Explore Articles</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/20b631fd69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <span class="arrow-button">⬅</span>
-        <h1>Categories</h1>
-        <span class="notification-icon">🔔</span>
+        <a class="arrow-button" href="./pageone.html"><i class="fa-solid fa-angle-left"></i></a>
+        <h1 class="categories">Categories</h1>
+        <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
     </header>
 
     <div class="container">
-        <h2>Construction</h2>
-        <img src="construction_image.jpg" alt="Construction Image">
+        <h2 class="container-further">Construction</h2>
+        <img src="images/excavator.png" alt="Construction Image">
     </div>
 
     <div class="container">
-        <h2>Construction</h2>
-        <img src="construction_image.jpg" alt="Construction Image">
+        <h2 class="container-further">Tools</h2>
+        <img src="images/tool-box.png" alt="Construction Image">
     </div>
 
     <div class="container">
-        <h2>Construction</h2>
-        <img src="construction_image.jpg" alt="Construction Image">
+        <h2 class="container-further">Railings & Fences</h2>
+        <img src="images/fence.png" alt="Construction Image">
     </div>
 
     <div class="container">
-        <h2>Construction</h2>
-        <img src="construction_image.jpg" alt="Construction Image">
+        <h2 class="container-further">Trailers</h2>
+        <img src="images/trailer.png" alt="Construction Image">
     </div>
 
     <div class="container">
-        <h2>Construction</h2>
-        <img src="construction_image.jpg" alt="Construction Image">
+        <h2 class="container-further">Ladders</h2>
+        <img src="images/ladder.png" alt="Construction Image">
     </div>
-
     <footer>
-        <span class="home-icon">🏠</span>
-        <span class="sign-in-icon">👤</span>
-        <span class="cart-icon">🛒</span>
-        <span class="settings-icon">⚙️</span>
+        <div class="house">
+            <span class="home-icon"><i class="fa-solid fa-house"></i></span>
+        </div>
+        <span class="sign-in-icon"><i class="fa-regular fa-user"></i></span>
+        <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+        <span class="settings-icon"><i class="fa-solid fa-gear"></i></span>
     </footer>
 </body>
+
 </html>
