@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile App Layout</title>
+    <script src="https://kit.fontawesome.com/20b631fd69.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
-    <h1>Welcome</h1>
-
+    <header>
+        <h1>Welcome</h1>
+        <a><i class="fa-regular fa-bell"></i></a>
+    </header>
     <div class="search-bar">
         🔍
-        <input type="text" placeholder="Search...">
+        <input type="text" placeholder="Search... "><i class="fa-solid fa-microphone"></i>
     </div>
 
     <div>
-        <img src="your-image-url.jpg" alt="Sample Image" style="width: 100%; max-width: 300px; border-radius: 10px;">
+        <img src="images/tools image.png" alt="tools-image" style="width: 100%; max-width: 300px; border-radius: 10px;">
     </div>
 
     <div class="category-header">
@@ -29,18 +31,34 @@
     <h2>Popular</h2>
 
     <div class="images-container">
-        <div>
-            <img src="your-first-image-url.jpg" alt="First Item"
-                style="width: 140px; height: 140px; border-radius: 10px;">
-            <p class="image-description">Description of first item</p>
+        <div class="hammer-container">
+            <div class="hammer-container-images">
+                <img src="images/hammer.png" alt="Second Item"
+                    style="width: 140px; height: 140px; border-radius: 10px;">
+            </div>
+            <div>
+                <h2>Hammer</h2>
+                <p>$4/per day</p>
+                <p class="image-description">Set of tools to put up shelf</p>
+            </div>
         </div>
-        <div>
-            <img src="your-second-image-url.jpg" alt="Second Item"
-                style="width: 140px; height: 140px; border-radius: 10px;">
-            <p class="image-description">Description of second item</p>
+        <div class="hammer-container">
+            <div class="hammer-container-images">
+                <img src="images/screw-driver.png" alt="Second Item"
+                    style="width: 140px; height: 140px; border-radius: 10px;">
+            </div>
+            <div>
+                <h2>Screw Driver</h2>
+                <p class="image-description">Set of tools to put up shelf</p>
+            </div>
         </div>
     </div>
-
+    <footer>
+        <span class="home-icon">🏠</span>
+        <span class="sign-in-icon">👤</span>
+        <span class="cart-icon">🛒</span>
+        <span class="settings-icon">⚙️</span>
+    </footer>
 </body>
 
 </html>
