@@ -292,7 +292,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .category-section {
@@ -348,9 +348,10 @@ header {
 }
 
 /* page-two */
-.up{
+.up {
     justify-content: space-between;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -429,5 +430,33 @@ footer {
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
+}
 
+/* third page */
+.thirdpage-image {
+    width: 83px;
+    height: 50px;
+}
+
+/* fourth page */
+
+.loan-return-headings {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    border-bottom: 2px solid #000
+}
+/* five page */
+
+.rent-message-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }

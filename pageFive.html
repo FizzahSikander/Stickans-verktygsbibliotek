@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>MY CART</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/20b631fd69.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 <body>
     <header class="up">
         <a class="arrow-button" href="./pagOne.html"><i class="fa-solid fa-angle-left"></i></a>
-        <h1 class="categories">Products</h1>
+        <h1 class="categories">My Cart</h1>
         <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
     </header>
     <div class="images-container">
@@ -25,13 +25,12 @@
                 <img src="images/page1hammer.png" class="thirdpage-image" alt="Second Item">
             </div>
             <div>
-                <h2 class="image-heading">Hammer</h2>
+                <h2 class="image-heading">Screw Driver</h2>
                 <p class="image-description">Set of tools to put up shelf</p>
-                <p><i class="fa-solid fa-sort"></i>1</p>
+                <p>$2.33</p>
             </div>
             <div>
-                <p class="image-dollars">$6</p>
-                <p>More Information</p>
+                <p class="image-dollars"><i class="fa-solid fa-angle-left"></i>1 Months</p>
             </div>
         </div>
         <div class="hammer-container">
@@ -41,41 +40,24 @@
             <div>
                 <h2 class="image-heading">Screw Driver</h2>
                 <p class="image-description">Set of tools to put up shelf</p>
-                <p><i class="fa-solid fa-sort"></i>1</p>
+                <p>$2.33</p>
             </div>
             <div>
-                <p class="image-dollars">$6</p>
-                <p>More Information</p>
+                <p class="image-dollars"><i class="fa-solid fa-angle-left"></i>1 Months</p>
             </div>
         </div>
-        <div class="hammer-container">
-            <div class="hammer-container-images">
-                <img src="images/axe.png" class="thirdpage-image" alt="Second Item">
-            </div>
-            <div>
-                <h2 class="image-heading">Screw Driver</h2>
-                <p class="image-description">Set of tools to put up shelf</p>
-                <p><i class="fa-solid fa-sort"></i>1</p>
-            </div>
-            <div>
-                <p class="image-dollars">$6</p>
-                <p>More Information</p>
-            </div>
-        </div>
-        <div class="hammer-container">
-            <div class="hammer-container-images">
-                <img src="images/drill.png" class="thirdpage-image" alt="Second Item">
-            </div>
-            <div>
-                <h2 class="image-heading">Screw Driver</h2>
-                <p class="image-description">Set of tools to put up shelf</p>
-                <p><i class="fa-solid fa-sort"></i>1</p>
-            </div>
-            <div>
-                <p class="image-dollars">$6</p>
-                <p>More Information</p>
-            </div>
-        </div>
+    </div>
+    <div class="loan-return-headings">
+        <h2 class="loan-heading">Total</h2>
+        <h2 class="return-heading">$14.22</h2>
+    </div>
+    <div class="forget">
+        <a href="javascript:void(0);" onclick="showRentMessage()" class="button">Rent Now</a>
+    </div>
+
+    <div id="rentMessage" class="rent-message-container">
+        <p>You Have Rented Now!</p>
+        <p>Collect It From Here <i class="fa-solid fa-location-dot"></i></p>
     </div>
     <footer>
         <div class="house">
@@ -85,6 +67,12 @@
         <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
         <span class="settings-icon"><i class="fa-solid fa-gear"></i></span>
     </footer>
+    <script>
+        function showRentMessage() {
+            var messageContainer = document.getElementById('rentMessage');
+            messageContainer.style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
