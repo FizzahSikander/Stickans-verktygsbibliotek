@@ -1,29 +1,15 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 430px;
-    min-height: 932px;
-} */
 body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Add this to vertically center your content */
     text-align: center;
     max-width: 430px;
     min-height: 932px;
     height: 100vh;
-    /* Make body take up full viewport height */
     margin: auto;
-    /* Center the body element horizontally */
     overflow: auto;
-    /* Add scroll if content is larger than the viewport */
 }
 
 .header img {
@@ -31,10 +17,6 @@ body {
     min-height: 208px;
     margin-top: 21px;
 }
-
-/* .form {
-    margin-left: 26px;
-} */
 
 .signUp {
     font-family: 'Open Sans';
@@ -58,9 +40,6 @@ body {
     color: #858585;
 }
 
-main {
-    padding: 20px;
-}
 
 .email-header {
     font-family: 'Open Sans';
@@ -88,7 +67,7 @@ main {
     border-color: #f6d441;
 }
 
-.email-form {
+.email {
     display: flex;
     flex-direction: column;
     align-items: flex-start
@@ -97,6 +76,7 @@ main {
 .forget {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .forgetPassword {
@@ -216,6 +196,7 @@ main {
     Width: 378px;
     Height: 60px;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 .search-bar input {
@@ -225,7 +206,7 @@ main {
 }
 
 .category-header {
-    width: 100%;
+    width: 378px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -270,6 +251,8 @@ main {
     justify-content: space-around;
     width: 100%;
     flex-direction: column;
+    margin-right: 20px;
+
 }
 
 .image-description {
@@ -285,6 +268,7 @@ main {
     align-items: center;
     margin-left: 26px;
     background: #FBE9A0;
+    margin-bottom: 15px;
 }
 
 header {
@@ -293,25 +277,23 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
 .category-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
 }
 
 .category-section--item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center the content (image and text) vertically */
     text-align: center;
 }
 
 .category-section--item-ellipsis {
-    height: 125px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -332,24 +314,22 @@ header {
 
 .category-image {
     width: 60px;
-    /* Adjust based on desired size, ensuring it's smaller than the container */
     height: 60px;
-    /* Maintain aspect ratio */
     border-radius: 50%;
-    /* Optional, if you want the images themselves to also be circles */
 }
 
-/* If you're using FontAwesome icons inside a category item and want them to match the size */
 .fa-ellipsis {
     font-size: 2rem;
-    /* Adjust the size of the icon */
     color: #333;
-    /* Or any color */
 }
 
 /* page-two */
 .up {
     justify-content: space-between;
+}
+
+.main-section {
+    margin-top: 25px;
 }
 
 .container {
@@ -376,7 +356,6 @@ footer {
     color: black;
     width: 371px;
     height: 65px;
-    margin-left: -20px;
 }
 
 .footer span {
@@ -433,9 +412,69 @@ footer {
 }
 
 /* third page */
+.hammer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 378px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.hammer-container::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #FF0000;
+    pointer-events: none;
+}
+
 .thirdpage-image {
     width: 83px;
     height: 50px;
+}
+
+.hammer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 378px;
+    margin-top: 15px;
+}
+
+.hammer-container>div,
+.hammer-container>aside {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hammer-container-images {
+    justify-content: flex-start;
+}
+
+.hammer-container div,
+.hammer-container aside {
+    text-align: center;
+}
+
+.image-description,
+.image-dollars,
+p {
+    margin: 5px 0;
+}
+
+aside p:last-child {
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
 }
 
 /* fourth page */
@@ -444,8 +483,10 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 400px;
-    border-bottom: 2px solid #000
+    border-bottom: 2px solid #000;
+    margin-left: 20px;
 }
+
 /* five page */
 
 .rent-message-container {

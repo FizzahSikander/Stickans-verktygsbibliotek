@@ -19,53 +19,58 @@
         <h1 class="categories">My Cart</h1>
         <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
     </header>
-    <div class="images-container">
-        <div class="hammer-container">
-            <div class="hammer-container-images">
-                <img src="images/page1hammer.png" class="thirdpage-image" alt="Second Item">
+    <main>
+        <section>
+            <div class="images-container">
+                <div class="hammer-container">
+                    <div class="hammer-container-images">
+                        <img src="images/page1hammer.png" class="thirdpage-image" alt="Second Item">
+                    </div>
+                    <div>
+                        <h2 class="image-heading">Screw Driver</h2>
+                        <p class="image-description">Set of tools to put up shelf</p>
+                        <p>$2.33</p>
+                    </div>
+                    <div>
+                        <p class="image-dollars"><i class="fa-solid fa-angle-left"></i>1 Months</p>
+                    </div>
+                </div>
+                <div class="hammer-container">
+                    <div class="hammer-container-images">
+                        <img src="images/screw-driver.png" class="thirdpage-image" alt="Second Item">
+                    </div>
+                    <div>
+                        <h2 class="image-heading">Screw Driver</h2>
+                        <p class="image-description">Set of tools to put up shelf</p>
+                        <p>$2.33</p>
+                    </div>
+                    <div>
+                        <p class="image-dollars"><i class="fa-solid fa-angle-left"></i>1 Months</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2 class="image-heading">Screw Driver</h2>
-                <p class="image-description">Set of tools to put up shelf</p>
-                <p>$2.33</p>
+        </section>
+        <section>
+            <div class="loan-return-headings">
+                <h2 class="loan-heading">Total</h2>
+                <h2 class="return-heading">$14.22</h2>
             </div>
-            <div>
-                <p class="image-dollars"><i class="fa-solid fa-angle-left"></i>1 Months</p>
-            </div>
+        </section>
+        <div class="forget">
+            <a href="javascript:void(0);" onclick="showRentMessage()" class="button">Rent Now</a>
         </div>
-        <div class="hammer-container">
-            <div class="hammer-container-images">
-                <img src="images/screw-driver.png" class="thirdpage-image" alt="Second Item">
-            </div>
-            <div>
-                <h2 class="image-heading">Screw Driver</h2>
-                <p class="image-description">Set of tools to put up shelf</p>
-                <p>$2.33</p>
-            </div>
-            <div>
-                <p class="image-dollars"><i class="fa-solid fa-angle-left"></i>1 Months</p>
-            </div>
+        <div id="rentMessage" class="rent-message-container">
+            <p>You Have Rented Now!</p>
+            <p>Collect It From Here <i class="fa-solid fa-location-dot"></i></p>
         </div>
-    </div>
-    <div class="loan-return-headings">
-        <h2 class="loan-heading">Total</h2>
-        <h2 class="return-heading">$14.22</h2>
-    </div>
-    <div class="forget">
-        <a href="javascript:void(0);" onclick="showRentMessage()" class="button">Rent Now</a>
-    </div>
-
-    <div id="rentMessage" class="rent-message-container">
-        <p>You Have Rented Now!</p>
-        <p>Collect It From Here <i class="fa-solid fa-location-dot"></i></p>
-    </div>
+    </main>
     <footer>
         <div class="house">
-            <a href="./index.html"><span class="home-icon"><i class="fa-solid fa-house"></i></span></a>
+            <a href="./pagOne.html"><span class="home-icon"><i class="fa-solid fa-house"></i></span></a>
         </div>
-        <span class="sign-in-icon"><i class="fa-regular fa-user"></i></span>
-        <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
-        <span class="settings-icon"><i class="fa-solid fa-gear"></i></span>
+        <a href="./index.html" class="sign-in-icon"><i class="fa-regular fa-user"></i></a>
+        <a href="./pageFive.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="settings-icon"><i class="fa-solid fa-gear"></i></a>
     </footer>
     <script>
         function showRentMessage() {
