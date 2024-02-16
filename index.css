@@ -410,7 +410,9 @@ footer {
     letter-spacing: 0em;
     text-align: left;
 }
-
+.containerimage-hover:hover{
+    background-color: #FBE9A0;
+}
 /* third page */
 .hammer-container {
     display: flex;
@@ -573,4 +575,7 @@ aside p:last-child {
 }
 .drill-page{
     padding: 20px;
+}
+.original-price {
+    text-decoration: line-through;
 }
