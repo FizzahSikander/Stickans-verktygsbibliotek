@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CART</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/20b631fd69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</head>
+
+<body>
+    <header class="up">
+        <a class="arrow-button" href="./pagOne.html"><i class="fa-solid fa-angle-left"></i></a>
+        <h1 class="categories">Drill</h1>
+        <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+    </header>
+    <main>
+        <section class="drill-page">
+            <img src="images/drill.png" alt="Drill" class="product-image">
+            <div class="product-details">
+                <h2 class="product-details-heading">100 V Hammer Drill</h2>
+                <div class="quantity-selector">
+                    <button id="decreaseQuantity" class="quantity-btn">-</button>
+                    <input type="text" id="quantityInput" value="1">
+                    <button id="increaseQuantity" class="quantity-btn">+</button>
+                </div>
+            </div>
+            <div class="rating-and-reviews">
+                <div class="rating-and-reviews-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="rating-and-reviews-customer">9 customer reviews</p>
+            </div>
+            <p class="priceDrill">$12.99 <span class="original-price">$14.89</span></p>
+            <p class="priceDrill-para">Set of tools to put up a shelf. 100 V Hammer Drill</p>
+            <div id="calendarContainer"></div>
+            <a href="./pagOne.html" class="button">Add To Cart</a>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="house">
+            <a href="./pagOne.html"><span class="home-icon"><i class="fa-solid fa-house"></i></span></a>
+        </div>
+        <a href="./index.html" class="sign-in-icon"><i class="fa-regular fa-user"></i></a>
+        <a href="./pageFive.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="settings-icon"><i class="fa-solid fa-gear"></i></a>
+    </footer>
+
+    <script>
+        document.getElementById('increaseQuantity').addEventListener('click', function () {
+            var quantityInput = document.getElementById('quantityInput');
+            var currentValue = parseInt(quantityInput.value, 10);
+            quantityInput.value = currentValue + 1;
+        });
+
+        document.getElementById('decreaseQuantity').addEventListener('click', function () {
+            var quantityInput = document.getElementById('quantityInput');
+            var currentValue = parseInt(quantityInput.value, 10);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+        var calendar = flatpickr("#calendarContainer", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+            inline: false,
+            clickOpens: true,
+        });
+
+
+        document.getElementById('checkAvailability').addEventListener('click', function () {
+            calendar.open();
+        });
+
+    </script>
+
+
+</body>
+
+</html>
