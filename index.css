@@ -506,6 +506,7 @@ aside p:last-child {
 .product-image {
     width: 378px;
     margin-top: 34px;
+    background-color: #FBE9A0;
 }
 
 .product-details,
