@@ -579,3 +579,7 @@ aside p:last-child {
 .original-price {
     text-decoration: line-through;
 }
+#calendarContainer{
+height: 5px;
+background-color: #858585;
+}
