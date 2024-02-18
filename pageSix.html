@@ -28,12 +28,12 @@
             <div class="product-details">
                 <h2 class="product-details-heading">100 V Hammer Drill</h2>
                 <div class="quantity-selector">
-                    <button id="quantity-selector-decreaseQuantity" class="quantity-btn">-</button>
+                    <button id="quantity-selector decreaseQuantity" class="quantity-btn">-</button>
                     <input type="text" id="quantityInput" value="1">
-                    <button id="quantity-selector-increaseQuantity" class="quantity-btn">+</button>
+                    <button id="quantity-selector increaseQuantity" class="quantity-btn">+</button>
                 </div>
             </div>
-            <div class="rating-and-reviews">
+            <article class="rating-and-reviews">
                 <div class="rating-and-reviews-stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -42,7 +42,7 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
                 <p class="rating-and-reviews-customer">9 customer reviews</p>
-            </div>
+            </article>
             <section>
                 <p class="priceDrill">$12.99 <span class="original-price">$14.89</span></p>
                 <p class="priceDrill-para">Set of tools to put up a shelf. 100 V Hammer Drill</p>
@@ -51,8 +51,6 @@
             <a href="./pageFive.html" class="button">Add To Cart</a>
 
         </section>
-
-
     </main>
     <footer>
         <div class="house">
@@ -70,7 +68,7 @@
             quantityInput.value = currentValue + 1;
         });
 
-        document.getElementById('quantity-selector-decreaseQuantity').addEventListener('click', function () {
+        document.getElementById('quantity-selector decreaseQuantity').addEventListener('click', function () {
             var quantityInput = document.getElementById('quantityInput');
             var currentValue = parseInt(quantityInput.value, 10);
             if (currentValue > 1) {

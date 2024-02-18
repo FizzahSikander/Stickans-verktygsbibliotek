@@ -284,19 +284,19 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
 
-.category-section--item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    &.item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.category-section--item-ellipsis {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    &.item-ellipsis {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
 
 .category-item {
@@ -336,10 +336,23 @@ header {
     display: flex;
     align-items: center;
     width: 381px;
-    height: 66px;
     justify-content: space-around;
     background-color: #F6D441;
     margin-top: 20px;
+
+    &.further {
+        font-family: "OpenSans";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &.imagehover:hover {
+        background-color: #FBE9A0;
+
+    }
 }
 
 .container img {
@@ -402,17 +415,7 @@ footer {
     text-align: left;
 }
 
-.container-further {
-    font-family: "OpenSans";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.containerimage-hover:hover{
-    background-color: #FBE9A0;
-}
+
 /* third page */
 .hammer-container {
     display: flex;
@@ -567,19 +570,24 @@ aside p:last-child {
     align-self: start;
     margin-left: 20px;
 }
-#quantityInput{
+
+#quantityInput {
     width: 50px;
 }
-.flatpickr-mobile{
+
+.flatpickr-mobile {
     margin-top: 25px;
 }
-.drill-page{
+
+.drill-page {
     padding: 20px;
 }
+
 .original-price {
     text-decoration: line-through;
 }
-#calendarContainer{
-height: 5px;
-background-color: #858585;
+
+#calendarContainer {
+    height: 5px;
+    background-color: #858585;
 }
